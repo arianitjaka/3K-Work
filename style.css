@@ -1,0 +1,36 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#niti {
+    text-align: right;
+    padding: 25px;
+    padding-right: 50px;
+}
+
+#niti h6 {
+    padding: 10px;
+    display: inline;
+    text-align: right;
+    font-size: 1.25em;
+}
+
+.nit-btn {
+    /* background-color: #0053a5; */
+    border: 2px solid #006fa5;
+    color: #006fa5;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.nit-btn:focus {
+    outline: none;
+  box-shadow: none;
+}
+
+.nit-btn:hover {
+    background-color: #006fa5;
+    color: white;
+}
+
+
