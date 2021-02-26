@@ -2,35 +2,161 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#niti {
+#header {
     text-align: right;
-    padding: 25px;
+    padding: 30px;
     padding-right: 50px;
+    /* background-color: rgb(250, 250, 250); */
 }
 
-#niti h6 {
+#header h6 {
     padding: 10px;
     display: inline;
     text-align: right;
     font-size: 1.25em;
 }
 
-.nit-btn {
-    /* background-color: #0053a5; */
+#search-container {
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Register Button */
+.register-btn {
     border: 2px solid #006fa5;
     color: #006fa5;
-    padding: 5px;
+    margin-right: 5px;
     border-radius: 30px;
 }
 
-.nit-btn:focus {
+.register-btn:focus {
     outline: none;
-  box-shadow: none;
+    box-shadow: none;
 }
 
-.nit-btn:hover {
+.register-btn:hover {
+    background-color: rgba(211, 211, 211, 0.301);
+    color: #006fa5;
+}
+
+/* Login Button */
+.login-btn {
     background-color: #006fa5;
+    border: 2px solid #006fa5;
+    color: white;
+    border-radius: 30px;
+}
+
+.login-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.login-btn:hover {
+    background-color: #006ea5dc;
     color: white;
 }
 
+@media only screen and (max-width: 500px) {
+    #header  {
+      padding-right: 40px;
+    }
+}
 
+@media only screen and (max-width: 320px) {
+    #header  {
+        padding-right: 25px;
+    }
+    #header h6 {
+        font-size: 1em;
+    }
+    .register-btn  {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .login-btn {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #header {
+        padding-right: 20px;
+    }
+    .register-btn  {
+        padding: 5px;
+        font-size: 13px;
+    }
+    .login-btn {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
+
+.logo-text h1 {
+    font-size: 5em;
+    color: #006fa5;
+    margin: auto;
+}
+
+/* Search bar */
+.main-search-bar {
+    width: 60%;
+    border: 0;
+    border-bottom: 3px solid #006fa5;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-text h1  {
+      font-size: 4.5em;
+    }
+    .main-search-bar {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo-text h1  {
+        font-size: 3.5em;
+      }
+      .main-search-bar {
+          width: 80%;
+      }
+      input.main-search-bar {
+          font-size: 15px;
+      }
+}
+
+@media only screen and (max-width: 280px) {
+    .logo-text h1  {
+        font-size: 3em;
+    }
+    .main-search-bar {
+          width: 80%;
+    }
+    input.main-search-bar {
+          font-size: 14px;
+    }
+}
