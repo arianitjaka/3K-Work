@@ -3,10 +3,12 @@ body {
 }
 
 #header {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: right; */
     padding: 30px;
     padding-right: 50px;
-    /* background-color: rgb(250, 250, 250); */
+    padding-left: 50px;
 }
 
 #header h6 {
@@ -16,17 +18,25 @@ body {
     font-size: 1.25em;
 }
 
-#search-container {
-    /* border: 1px solid red; */
-    margin-top: 50px;
-    text-align: center;
+.back-btn {
+    width: 40px;
+    padding: 0;
 }
 
-/* Register Button */
+.back-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.back-btn svg {
+    width: 100%;
+    padding: 0;
+    color: #006fa5;
+}
+
 .register-btn {
     border: 2px solid #006fa5;
     color: #006fa5;
-    margin-right: 5px;
     border-radius: 30px;
 }
 
@@ -43,29 +53,6 @@ body {
 .register-btn:hover {
     background-color: rgba(211, 211, 211, 0.336);
     color: #006fa5;
-}
-
-/* Login Button */
-.login-btn {
-    background-color: #006fa5;
-    border: 2px solid #006fa5;
-    color: white;
-    border-radius: 30px;
-}
-
-.login-btn a {
-    text-decoration: none;
-    color: white;
-}
-
-.login-btn:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.login-btn:hover {
-    background-color: #006ea5dc;
-    color: white;
 }
 
 @media only screen and (max-width: 500px) {
@@ -105,20 +92,44 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+
+
+#search-container {
+    margin-top: 50px;
+    text-align: center;
+    width: max-content;
+}
+
 .logo-text h1 {
     font-size: 5em;
     color: #006fa5;
-    margin: auto;
+    margin-bottom: 50px;
 }
 
-/* Search bar */
-.main-search-bar {
-    width: 60%;
+
+.user-input, .password-input {
+    width: 100%;
     border: 0;
     border-bottom: 3px solid #006fa5;
     padding: 10px;
-    margin-top: 15px;
     font-size: 1.1em;
+    display: block;
+    margin: auto;
+}
+
+.password-input {
+    margin-top: 30px;
 }
 
 textarea:hover,
@@ -138,6 +149,30 @@ label:focus,
     box-shadow: none !important;
 }
 
+.login-btn {
+    background-color: #006fa5;
+    width: 100%;
+    margin-top: 50px;
+    border: 2px solid #006fa5;
+    border-radius: 30px;
+}
+
+.login-btn h6 {
+    padding: 5px;
+    margin: 0;
+    color: white;
+    font-size: 1.25em;
+}
+
+.login-btn:hover {
+    background-color: #006ea5dc;
+}
+
+.login-btn a {
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 500px) {
     .logo-text h1  {
       font-size: 4.5em;
@@ -145,6 +180,18 @@ label:focus,
     .main-search-bar {
         width: 75%;
     }
+}
+
+@media only screen and (max-width: 355px) {
+    .logo-text h1  {
+        font-size: 4em;
+      }
+      .main-search-bar {
+          width: 80%;
+      }
+      input.main-search-bar {
+          font-size: 15px;
+      }
 }
 
 @media only screen and (max-width: 320px) {
@@ -170,7 +217,3 @@ label:focus,
           font-size: 14px;
     }
 }
-
-
-
-
