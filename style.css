@@ -6,7 +6,6 @@ body {
     text-align: right;
     padding: 30px;
     padding-right: 50px;
-    /* background-color: rgb(250, 250, 250); */
 }
 
 #header h6 {
@@ -16,11 +15,191 @@ body {
     font-size: 1.25em;
 }
 
+
+/* Search Container */
 #search-container {
-    /* border: 1px solid red; */
     margin-top: 150px;
     text-align: center;
 }
+
+.logo-text i {
+    color: #006fa5;
+}
+
+.works-users-radio {
+    margin-top: 30px;
+}
+
+
+/* Random Articles */
+.random-articles {
+    width: 60%;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.random-articles h6 {
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.random-articles-content {
+    margin-top: 20px;
+}
+
+.random-articles-content h3 {
+    display: inline-block;
+    font-size: 18px;
+    width: 60px;
+    line-height: 20px;
+    padding: 8px 16px 8px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.random-articles-content a {
+    padding: 8px 0;
+    color: black;
+}
+
+.random-articles-content a:hover {
+    color: #006fa5;
+}
+
+.random-articles-content .col {
+    padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .random-articles {
+        width: 80%;
+    }
+    .random-articles h6 {
+        font-size: 18px;
+    }
+    .random-articles-content h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .random-articles {
+        width: 75%;
+    }
+    .random-articles h6 {
+        font-size: 18px;
+    }
+    .random-articles-content h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .random-articles {
+        width: 90%;
+    }
+    .random-articles h6 {
+        font-size: 16px;
+    }
+    .random-articles-content h3 {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .random-articles {
+        width: 90%;
+    }
+    .random-articles h6 {
+        font-size: 16px;
+    }
+    .random-articles-content h3 {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+
+/* Universities Slider */
+.uni-slider {
+    height: 250px;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 200px;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.uni-slide-track {
+    display: flex;
+    width: calc(250px * 14);
+    animation: scroll 40s linear infinite;
+}
+
+.uni-slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.uni-slide {
+    height: 200px;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    perspective: 100px;
+}
+
+.uni-slide img {
+    width: 100%;
+}
+
+.uni-slide img:hover {
+    transform: translateZ(10px);
+    transition: transform .5s;
+}
+
+.uni-slider::before,
+.uni-slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: " ";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.uni-slider::before {
+    top: 0;
+    left: 0;
+}
+
+.uni-slider::after {
+    top: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
 
 /* Register Button */
 .register-btn {
@@ -138,12 +317,27 @@ label:focus,
     box-shadow: none !important;
 }
 
+@media screen and (max-width: 768px) {
+    .main-search-bar {
+      width: 80%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .logo-text h1  {
       font-size: 4.5em;
     }
     .main-search-bar {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-text h1  {
+        font-size: 4em;
+    }
+    .main-search-bar {
+        width: 85%;
     }
 }
 
@@ -159,6 +353,7 @@ label:focus,
       }
 }
 
+
 @media screen and (max-width: 280px) {
     .logo-text h1  {
         font-size: 3em;
@@ -166,8 +361,22 @@ label:focus,
     input.main-search-bar {
           font-size: 14px;
     }
+    .main-search-bar {
+        width: 90%;
+    }
 }
 
+@media screen and (max-width: 320px) {
+    .logo-text i {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .logo-text i {
+        font-size: 12px;
+    }
+}
 
 
 
