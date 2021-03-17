@@ -715,6 +715,55 @@ label:focus,
 
 
 
+/* User Profile */
+.user-profile-header-info {
+    /* border: 1px solid red; */
+    margin-top: 150px;
+}
+
+.user-profile-info {
+    /* border: 1px solid blue; */
+    max-width: 600px;
+    /* margin: auto; */
+    border: 0;
+}
+
+#user-photo {
+    margin: auto;
+}
+
+#user-photo img {
+    width: 100%;
+    /* display: flex;
+    margin: auto; */
+    border-radius: 50%;
+}
+
+#user-info {
+    padding-left: 40px;
+}
+
+#user-info i {
+    color: #006fa5;
+}
+
+#user-info p {
+    margin-top: -5px;
+}
+
+#user-info h3, p {
+    text-align: left;
+}
+
+.user-profile-content-articles {
+    margin-top: 100px;
+}
+
+.user-articles-title h1 {
+    text-align: left;
+}
+
+
 
 
 
