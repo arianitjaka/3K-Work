@@ -764,6 +764,53 @@ label:focus,
 }
 
 
+@media screen and (max-width: 768px) {
+    #user-photo img {
+        width: 50%;
+    }
+    #user-photo {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #user-info h3 {
+        font-size: 25px;
+    }
+    #user-info p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #user-info {
+        padding-left: 35px;
+    }
+    #user-info h3 {
+        font-size: 23px;
+    }
+    #user-info p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #user-info {
+        padding-left: 30px;
+    }
+    #user-info h3 {
+        font-size: 22px;
+    }
+    #user-info p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #user-info {
+        padding-left: 20px;
+    }
+}
 
 
 
