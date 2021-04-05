@@ -1221,6 +1221,62 @@ label:focus,
 
 
 
+/* Individual Posts */
+.user-post-title {
+    margin-top: 150px;
+}
+
+.user-post-title h1 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.user-post-time-date {
+    margin-top: 20px;
+    color: #006fa5;
+}
+
+.user-post-abstract {
+    margin-top: 100px;
+}
+
+.user-post-partners {
+    margin-top: 25px;
+}
+
+
+.partners-photo {
+    display: flex;
+    overflow: hidden;
+}
+
+.partners-photo img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: -14px;
+}
+
+.user-post-pdf {
+    margin-top: 50px;
+}
+
+.user-post-about-author {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------- NAVBAR -------------------------------- */
