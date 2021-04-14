@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="register.css">
+    <link href="register.scss" rel="stylesheet/scss" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/heroicons@0.4.2/index.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <h3>Uni</h3>
+
+
+    <div class="container">
+        <div class="register-container">
+
+            <h1 class="register-title">Krijo llogari</h1>
+
+
+            <form class="register-form">
+
+                <div class="register-form-row">
+                    <label for="first-name" class="register-form-label">Emri</label>
+                    <div>
+                        <input type="text" id="first-name" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <label for="last-name" class="register-form-label">Mbiemri</label>
+                    <div>
+                        <input type="text" id="last-name" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <div class="username">
+                        <label for="username" class="register-form-label" data-toggle="tooltip" data-placement="bottom"
+                            value="MASTEEEERI...">Përdoruesi
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20"
+                                fill="#006fa5" class="register-form-info-icon">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" id="username" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="radio-text ml-1 mt-1">Mashkull</label>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female" class="radio-text ml-1 mt-1">Femër</label>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other" class="radio-text ml-1 mt-1">Tjetër</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <label for="email" class="register-form-label">Email adresa</label>
+                    <div>
+                        <input type="email" id="email" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <label for="city" class="register-form-label">Qyteti</label>
+                    <div>
+                        <input type="text" id="qyteti" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <label for="university" class="register-form-label">Universiteti</label>
+                    <div>
+                        <input type="text" id="university" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <div class="password">
+                        <label for="password" class="register-form-label" data-toggle="tooltip" data-placement="bottom"
+                            value="MASTEEEERI...">Fjalëkalimi
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20"
+                                fill="#006fa5" class="register-form-info-icon">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="password" id="password" class="register-form-input">
+                    </div>
+                </div>
+
+                <div class="register-form-row">
+                    <div class="recheck-password">
+                        <label for="recheck-password" class="register-form-label" data-toggle="tooltip"
+                            data-placement="bottom" value="MASTEEEERI...">Rishkruaj fjalëkalimin
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20"
+                                fill="#006fa5" class="register-form-info-icon">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="password" id="recheck-password" class="register-form-input">
+                    </div>
+                </div>
+
+
+                <div class="form-buttons">
+                    <button class="register-now-button btn">
+                        <h6>Regjistrohu</h6>
+                    </button>
+
+                    <div class="login-now-button btn">
+                        <a href="#">
+                            <h6>Kam llogari</h6>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <h5>Uniworks &copy; Copyright 2021</h5>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
