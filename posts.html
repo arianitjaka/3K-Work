@@ -85,10 +85,17 @@
 
     <!-- Search -->
     <div class="search-header">
-        <div class="container">
-            <div class="logo-text">
-                <i class="fas fa-search"></i><input class="main-search-bar" type="text" placeholder="Kërko...">
+        <div class="container" id="post-search-container">
+
+            <div class="post-search-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="#006fa5">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+                <input class="main-search-bar" type="text" placeholder="Kërko...">
             </div>
+
         </div>
     </div>
 
@@ -100,18 +107,18 @@
             <div class="col-md-3" id="posts-preferences">
                 <h5>Preferencat</h5>
 
-                <div class="form-group mt-4">
+                <div class="mala form-group mt-4">
                     <label for="sort-posts">Rendit nga...</label>
-                    <select class="preferences-options form-control" id="sort-posts">
+                    <select class="preferences-options form-control">
                         <option>...</option>
                         <option>Postimi më i ri</option>
                         <option>Postimi më i vjetër</option>
                     </select>
                 </div>
 
-                <div class="form-group mt-4">
+                <div class="mala form-group mt-4">
                     <label for="sort-posts">Universiteti</label>
-                    <select class="preferences-options form-control" id="sort-posts">
+                    <select class="preferences-options form-control">
                         <option>...</option>
                         <option>Më e reja</option>
                         <option>Më e vjetra</option>
@@ -123,69 +130,86 @@
                         <h6>Ruaj</h6>
                     </button>
                 </div>
-                
+
 
             </div>
 
             <div class="col-md-9" id="posts-content">
                 <div class="posts-col">
                     <a href="#">
-                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero quod
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero
+                            quod
                             illo!</h5>
                     </a>
-                    <p><i class="fas fa-user-friends mr-2"></i> <a href="#">Filan Fisteku</a>, <a href="#">Filan
+                    <p><i class="fas fa-user-friends mr-2"></i> <a href="userPost.html">Filan Fisteku</a>, <a
+                            href="#">Filan
                             Fisteku</a></span></p>
                     <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos
-                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia sed
-                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum quo
-                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid reiciendis
+                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia
+                        sed
+                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum
+                        quo
+                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid
+                        reiciendis
                         porro.</p>
                 </div>
 
                 <div class="posts-col">
                     <a href="#">
-                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero quod
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero
+                            quod
                             illo!</h5>
                     </a>
                     <p><i class="fas fa-user-friends mr-2"></i> <a href="#">Filan Fisteku</a>, <a href="#">Filan
                             Fisteku</a></span></p>
                     <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos
-                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia sed
-                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum quo
-                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid reiciendis
+                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia
+                        sed
+                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum
+                        quo
+                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid
+                        reiciendis
                         porro.</p>
                 </div>
 
                 <div class="posts-col">
                     <a href="#">
-                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero quod
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero
+                            quod
                             illo!</h5>
                     </a>
                     <p><i class="fas fa-user-friends mr-2"></i> <a href="#">Filan Fisteku</a>, <a href="#">Filan
                             Fisteku</a></span></p>
                     <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos
-                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia sed
-                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum quo
-                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid reiciendis
+                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia
+                        sed
+                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum
+                        quo
+                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid
+                        reiciendis
                         porro.</p>
                 </div>
 
                 <div class="posts-col">
                     <a href="#">
-                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero quod
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos sapiente ad libero
+                            quod
                             illo!</h5>
                     </a>
                     <p><i class="fas fa-user-friends mr-2"></i> <a href="#">Filan Fisteku</a>, <a href="#">Filan
                             Fisteku</a></span></p>
                     <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos
-                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia sed
-                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum quo
-                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid reiciendis
+                        corporis quidem perferendis adipisci aperiam reprehenderit incidunt laborum, deserunt mollitia
+                        sed
+                        molestiae reiciendis, eaque ipsum aut. Harum est laborum architecto porro quas? Culpa et hic eum
+                        quo
+                        accusamus expedita quis, alias tenetur minus voluptatem possimus, iure impedit aliquid
+                        reiciendis
                         porro.</p>
                 </div>
-                
 
-                
+
+
             </div>
 
         </div>
