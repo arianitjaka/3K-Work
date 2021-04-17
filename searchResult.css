@@ -255,21 +255,28 @@ label:focus,
 
 
 /* Search Header */
-.search-header {
-    margin-top: 175px;
+.search-results-header {
+    margin-top: 150px;
 }
 
-.logo-text i {
-    color: #006fa5;
+.search-wrapper {
+    border: 1px solid red;
+    width: 60%;
+    padding: 0 0 0 20px;
+    border: 3px solid #f4f4f4;
+    border-radius: 20px;
+}
+
+.search-wrapper svg {
+    margin-bottom: 3px;
 }
 
 .main-search-bar {
-    width: 60%;
+    width: 94%;
     border: 0;
-    border-bottom: 3px solid #006fa5;
-    padding: 10px;
-    margin-top: 15px;
-    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;  
 }
 
 
@@ -287,7 +294,7 @@ label:focus,
     text-align: center;
     border: 0;
     margin-top: 40px;
-    width: 130px;
+    width: 100px;
 }
 
 .searched-user-profile img {
@@ -319,36 +326,67 @@ label:focus,
 }
 
 
+@media screen and (max-width: 992px) {
+	.search-wrapper {
+        width: 80%;
+    }
+    .main-search-bar {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .searched-user-profile {
         margin: auto;
         margin-top: 40px;
-        width: 130px;
+        width: 100px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .searched-user-profile-col {
+	.search-wrapper {
+        width: 100%;
+    }
+    .main-search-bar {
+        width: 90%;
+    }
+	.searched-user-profile-col {
         margin: auto;
-        margin-top: 40px;
+        margin-top: 20px;
         width: max-content;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .searched-user-profile-col {
-        margin: auto;
-        margin-top: 40px;
-        width: max-content;
+	.searched-result-text {
+		margin-top: 60px;
+	}
+	.searched-result-text h4 {
+        margin: 0;
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 355px) {
     .searched-result-text h4 {
         font-size: 20px;
     }
     .main-search-bar {
-        width: 90%
+        width: 80%;
+		padding: 10px 18px 10px 8px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    input.main-search-bar {
+        font-size: 14px;
+    }
+    .search-wrapper {
+        border-radius: 15px;
+    }
+    .search-wrapper svg {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2px;
+    }
+    .main-search-bar {
+        padding: 8px 16px 8px 6px;
     }
 }
 

@@ -248,6 +248,9 @@ p {
 
 .works-users-radio svg {
     width: 25px;
+    margin-bottom: 6px;
+    margin-left: 2px;
+    color: #7f7e7e;
 }
 
 .logo-text {
@@ -293,7 +296,7 @@ p {
 
 @media screen and (max-width: 992px) {
     .search-wrapper {
-        width: 60%;
+        width: 75%;
     }
     .main-search-bar {
         width: 90%;
@@ -302,7 +305,7 @@ p {
 
 @media screen and (max-width: 768px) {
     .search-wrapper {
-        width: 80%;
+        width: 100%;
     }
     .main-search-bar {
       width: 90%;
@@ -313,17 +316,11 @@ p {
     .logo-text  {
       font-size: 4.5em;
     }
-    .main-search-bar {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 430px) {
     .logo-text  {
       font-size: 4.5em;
-    }
-    .main-search-bar {
-        width: 85%;
     }
 }
 
@@ -332,7 +329,6 @@ p {
         font-size: 4em;
     }
     .search-wrapper {
-        width: 100%;
         padding: 0 0 0 5px;
     }
     .search-wrapper svg {
@@ -360,6 +356,9 @@ p {
     }
     input.main-search-bar {
         font-size: 14px;
+    }
+    .search-wrapper {
+        border-radius: 15px;
     }
     .search-wrapper svg {
         width: 20px;
@@ -393,6 +392,7 @@ p {
 
 .random-articles-content {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .random-articles-content h3 {
@@ -420,7 +420,7 @@ p {
 
 @media screen and (max-width: 768px) {
     .random-articles {
-        width: 80%;
+        width: 95%;
     }
     .random-articles h6 {
         font-size: 18px;
@@ -432,9 +432,6 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-    .random-articles {
-        width: 75%;
-    }
     .random-articles h6 {
         font-size: 18px;
     }
@@ -445,9 +442,6 @@ p {
 }
 
 @media screen and (max-width: 360px) {
-    .random-articles {
-        width: 90%;
-    }
     .random-articles h6 {
         font-size: 16px;
     }
@@ -458,9 +452,6 @@ p {
 }
 
 @media screen and (max-width: 280px) {
-    .random-articles {
-        width: 90%;
-    }
     .random-articles h6 {
         font-size: 16px;
     }
@@ -580,7 +571,7 @@ label:focus,
 }
 
 .main-search-bar::placeholder{
-    color: rgb(150, 150, 150);
+    color: #7f7e7e;
 }
 
 
